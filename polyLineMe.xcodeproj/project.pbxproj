@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C07912124D2827100084385 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07912024D2827100084385 /* DataCell.swift */; };
+		4C61D14B24D17C5300AEDBE7 /* ZomatoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61D14A24D17C5300AEDBE7 /* ZomatoData.swift */; };
 		4CE7B81224CA9A3A00D74302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7B81124CA9A3A00D74302 /* AppDelegate.swift */; };
 		4CE7B81424CA9A3A00D74302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7B81324CA9A3A00D74302 /* SceneDelegate.swift */; };
 		4CE7B81624CA9A3A00D74302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7B81524CA9A3A00D74302 /* ViewController.swift */; };
@@ -14,9 +16,15 @@
 		4CE7B81C24CA9A3A00D74302 /* polyLineMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7B81A24CA9A3A00D74302 /* polyLineMe.xcdatamodeld */; };
 		4CE7B81E24CA9A4600D74302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE7B81D24CA9A4600D74302 /* Assets.xcassets */; };
 		4CE7B82124CA9A4600D74302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE7B81F24CA9A4600D74302 /* LaunchScreen.storyboard */; };
+		4CE7B82A24CA9BE500D74302 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE7B82924CA9BE500D74302 /* MapKit.framework */; };
+		4CE7B82C24CA9BEF00D74302 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE7B82B24CA9BEF00D74302 /* CoreLocation.framework */; };
+		88FEA144CF8EDC9B97C216AE /* Pods_polyLineMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F88179E5F6C9CD5BD380F31 /* Pods_polyLineMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F88179E5F6C9CD5BD380F31 /* Pods_polyLineMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_polyLineMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C07912024D2827100084385 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		4C61D14A24D17C5300AEDBE7 /* ZomatoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomatoData.swift; sourceTree = "<group>"; };
 		4CE7B80E24CA9A3A00D74302 /* polyLineMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = polyLineMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE7B81124CA9A3A00D74302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE7B81324CA9A3A00D74302 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,10 @@
 		4CE7B81D24CA9A4600D74302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CE7B82024CA9A4600D74302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CE7B82224CA9A4600D74302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE7B82924CA9BE500D74302 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CE7B82B24CA9BEF00D74302 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55A1180BD5DFB1F0755BA7D1 /* Pods-polyLineMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-polyLineMe.debug.xcconfig"; path = "Target Support Files/Pods-polyLineMe/Pods-polyLineMe.debug.xcconfig"; sourceTree = "<group>"; };
+		D073AC741E2E6727023CFC1D /* Pods-polyLineMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-polyLineMe.release.xcconfig"; path = "Target Support Files/Pods-polyLineMe/Pods-polyLineMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE7B82C24CA9BEF00D74302 /* CoreLocation.framework in Frameworks */,
+				4CE7B82A24CA9BE500D74302 /* MapKit.framework in Frameworks */,
+				88FEA144CF8EDC9B97C216AE /* Pods_polyLineMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				4CE7B81024CA9A3A00D74302 /* polyLineMe */,
 				4CE7B80F24CA9A3A00D74302 /* Products */,
+				4CE7B82824CA9BE400D74302 /* Frameworks */,
+				8FCC980ACAFB420A4755D435 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +78,8 @@
 				4CE7B81124CA9A3A00D74302 /* AppDelegate.swift */,
 				4CE7B81324CA9A3A00D74302 /* SceneDelegate.swift */,
 				4CE7B81524CA9A3A00D74302 /* ViewController.swift */,
+				4C07912024D2827100084385 /* DataCell.swift */,
+				4C61D14A24D17C5300AEDBE7 /* ZomatoData.swift */,
 				4CE7B81724CA9A3A00D74302 /* Main.storyboard */,
 				4CE7B81D24CA9A4600D74302 /* Assets.xcassets */,
 				4CE7B81F24CA9A4600D74302 /* LaunchScreen.storyboard */,
@@ -70,6 +89,25 @@
 			path = polyLineMe;
 			sourceTree = "<group>";
 		};
+		4CE7B82824CA9BE400D74302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE7B82B24CA9BEF00D74302 /* CoreLocation.framework */,
+				4CE7B82924CA9BE500D74302 /* MapKit.framework */,
+				0F88179E5F6C9CD5BD380F31 /* Pods_polyLineMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FCC980ACAFB420A4755D435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55A1180BD5DFB1F0755BA7D1 /* Pods-polyLineMe.debug.xcconfig */,
+				D073AC741E2E6727023CFC1D /* Pods-polyLineMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE7B82524CA9A4600D74302 /* Build configuration list for PBXNativeTarget "polyLineMe" */;
 			buildPhases = (
+				154DAF772E11A3405D941539 /* [CP] Check Pods Manifest.lock */,
 				4CE7B80A24CA9A3A00D74302 /* Sources */,
 				4CE7B80B24CA9A3A00D74302 /* Frameworks */,
 				4CE7B80C24CA9A3A00D74302 /* Resources */,
+				E72B8BC07D8666B0794159B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,11 +176,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		154DAF772E11A3405D941539 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-polyLineMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72B8BC07D8666B0794159B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-polyLineMe/Pods-polyLineMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-polyLineMe/Pods-polyLineMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-polyLineMe/Pods-polyLineMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CE7B80A24CA9A3A00D74302 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C61D14B24D17C5300AEDBE7 /* ZomatoData.swift in Sources */,
+				4C07912124D2827100084385 /* DataCell.swift in Sources */,
 				4CE7B81624CA9A3A00D74302 /* ViewController.swift in Sources */,
 				4CE7B81C24CA9A3A00D74302 /* polyLineMe.xcdatamodeld in Sources */,
 				4CE7B81224CA9A3A00D74302 /* AppDelegate.swift in Sources */,
@@ -286,6 +370,7 @@
 		};
 		4CE7B82624CA9A4600D74302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A1180BD5DFB1F0755BA7D1 /* Pods-polyLineMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +388,7 @@
 		};
 		4CE7B82724CA9A4600D74302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D073AC741E2E6727023CFC1D /* Pods-polyLineMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
