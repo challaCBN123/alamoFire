@@ -12,14 +12,24 @@ import Alamofire
 import SwiftyJSON
 class TomatoData:NSObject{
     static let service = TomatoData()
-    func gettingData(baseUrl:String,seriveUrl:String,encoding:JSONEncoding, completionHandler : @escaping (_ dataResponse : AnyObject,_ err:String)->Void){
-        AF.request(baseUrl+seriveUrl,method: .get,encoding: encoding ).responseJSON{ (response) in
-            let httpRespone = response
-            if httpRespone.response?.statusCode == 200{
-                print(response.value! as Any)
-            }else{
-                print("Singam")
+    func gettingData(baseUrl:String,seriveUrl:String,encoding:JSONEncoding,headerParameters:NSDictionary,view: UIView, completionHandler : @escaping (_ dataResponse : AnyObject,_ err:String)->Void){
+        
+        AF.request(baseUrl+seriveUrl,method: .get,encoding: encoding,headers: headerParameters as? HTTPHeaders).responseJSON{ (response) in
+            switch response.result{
+                
+            case .success(_):
+                if response.value != nil{
+                      completionHandler(response.value! as AnyObject, "")
+                    //print(response.value!)
+                }
+              
+                break
+            case .failure(_):
+                completionHandler(Error.self as AnyObject, "")
+                print("error")
+                break
             }
+            
             
         }
 
